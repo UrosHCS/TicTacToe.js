@@ -1,0 +1,33 @@
+.container {
+    margin: 1% auto auto;
+    text-align: center;
+
+
+    background-color: #2196f3;
+}
+.header {
+    display: inline;
+    background-color: inherit;
+    font-size: inherit;
+    margin: 1%;
+}
+
+.table {
+    background-color: #2196f3;
+	display: table;
+	width: 100%;
+    border-spacing: 5px;
+}
+.row {
+    display:table-row;
+    width: 100%;
+}
+.table-cell {
+    width: 33.33%;
+	display: table-cell;
+	vertical-align: middle;
+    position: relative;
+    background-color: #64b5f6;
+
+}
+
