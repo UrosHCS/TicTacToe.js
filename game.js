@@ -2,6 +2,22 @@ var gameMatrix; //3x3 matrix of number representations (0, 1, -1)
 var divMatrix = setupDivMatrix(); //3x3 matrix of labels (fields)
 var gameOver; //boolean
 
+var playerScoreElement = document.getElementById("wins");
+var computerScoreElement = document.getElementById("losses");
+
+var playerScore = 0;
+var computerScore = 0;
+
+function incrementPlayerScore() {
+    playerScore++;
+    playerScoreElement.innerHTML = playerScore;
+}
+function incrementComputerScore() {
+    computerScore++;
+    computerScoreElement.innerHTML = computerScore;
+}
+
+
 function setupDivMatrix() {
     var table = document.getElementById("table");
     var matrix = [[],[],[]];
@@ -87,6 +103,11 @@ function didSome1Win(three) {
             }
             removeAllClicks();
             gameOver = true;
+            if (three === 3) {
+                incrementPlayerScore();
+            } else if (three === -3) {
+                incrementComputerScore();
+            }
             break;
         }
     }
