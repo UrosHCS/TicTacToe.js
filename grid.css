@@ -1,0 +1,44 @@
+@media (min-width: 1024px) {
+    .container {
+        max-width: 800px;
+
+    }
+  }
+
+.container {
+    margin: 1% auto auto;
+    text-align: center;
+    /* background-color: #e100ff; */
+  }
+  .header {
+    display: inline;
+    background-color: inherit;
+    font-size: inherit;
+    margin: 1%;
+  }
+  
+  .table {
+    background-color: #EA80FC;
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .table-cell {
+    display: flex;
+    /* vertical-align: middle; */
+    justify-content: center;
+    align-items: center;
+    background-color: #AA00FF;
+  }
+  
+  body {
+    background-color: rgb(82, 0, 122);
+  }
+  
+  .game-menu {
+    font-size: 50px;
+    background-color: #EA80FC;
+  }
+  

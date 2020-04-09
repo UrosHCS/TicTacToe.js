@@ -2,39 +2,31 @@
 <html>
 <head>
 	<title>TicTacToe</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="grid.css">
 </head>
 
 <body>
 	<div class="container">
-		<div class="game-menu">
-			<button id="btn" class="header">New Game</button>
+		<div id="btn" class="game-menu">
+			<div class="header">НОВА ИГРА</div>
+			<br>
 			<div class="header">
-				<strong>Score:</strong>
-				wins <strong id="wins">0</strong>
-				losses <strong id="losses">0</strong>
+				<strong>Резултат:</strong>
+				Победе <strong id="wins">0</strong>
+				Порази <strong id="losses">0</strong>
 			</div>
 		</div>
 		<div id="table" class="table">
-			<div class="row">
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-			</div>
-			<div class="row">
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-			</div>
-			<div class="row">
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-				<div class="table-cell"></div>
-			</div>
+			<div id="0-0" class="table-cell"></div>
+			<div id="0-1" class="table-cell"></div>
+			<div id="0-2" class="table-cell"></div>
+			<div id="1-0" class="table-cell"></div>
+			<div id="1-1" class="table-cell"></div>
+			<div id="1-2" class="table-cell"></div>
+			<div id="2-0" class="table-cell"></div>
+			<div id="2-1" class="table-cell"></div>
+			<div id="2-2" class="table-cell"></div>
 		</div>
-		<table>
-			<tr></tr>
-		</table>
 	</div>
 	<script src="game.js"></script>
 	<script src="htmlSetup.js"></script>
